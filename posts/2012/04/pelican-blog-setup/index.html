@@ -210,7 +210,7 @@
 
 
 <p>I then modified my settings file to my liking, and gave it a whirl <code>pelican -s settings.py</code></p>
-<p>This command spits out the static blog into the <code>output/</code> directory. Loading it up in Chrome and at first glance. Everything looks very nice.
+<p>This command spits out the static blog into the <code>output/</code> directory. Loading it up in Chrome and at first glance everything looks very nice.
 On second glance, not so much.</p>
 <h2>Troubleshooting</h2>
 <p>First, I noticed that in the article metadata, the links aren't working. Clicking my name should take me to the author page and it instead is linking to the relative root.</p>
@@ -245,7 +245,7 @@ A quick comparison with some of the other themes shows a discrepency.</p>
 
 <p>Not only that, now my article links are broken.
 A quick look at the Pelican 3.0 <a href="http://pelican.notmyidea.org/en/latest/settings.html#url-settings">docs</a> show there two new important settings called <code>ARTICLE_URL</code> and <code>ARTICLE_SAVE_AS</code>.
-These settings lets you save the static file as a different name than where its links point to. This is nice so your links go directly to a pretty slug, while the page gets saved as an index.html.</p>
+These settings let you save the static file as a different name than where its links point to. This is nice so your links go directly to a pretty slug, while the page gets saved as an index.html.</p>
 <p>The update for settings.py is as follows:</p>
 <div class="codehilite"><pre><span class="n">ARTICLE_URL</span> <span class="p">=</span> <span class="s">&#39;/posts/{date:%Y}/{date:%m}/{slug}/&#39;</span>
 <span class="n">ARTICLE_SAVE_AS</span> <span class="p">=</span> <span class="s">&#39;/posts/{date:%Y}/{date:%m}/{slug}/index.html&#39;</span>
@@ -313,8 +313,8 @@ These settings lets you save the static file as a different name than where its 
 <li class="nav-header"><h4><i class="icon-tags icon-large"></i>Tags</h4></li>
 
 <li class="tag-4">
-    <a href="../../../../.././tag/pelican.html">
-        <i class="icon-tag icon-large"></i>pelican
+    <a href="../../../../.././tag/blog.html">
+        <i class="icon-tag icon-large"></i>blog
     </a>
 </li>
 
@@ -331,14 +331,14 @@ These settings lets you save the static file as a different name than where its 
 </li>
 
 <li class="tag-4">
-    <a href="../../../../.././tag/blog.html">
-        <i class="icon-tag icon-large"></i>blog
+    <a href="../../../../.././tag/git.html">
+        <i class="icon-tag icon-large"></i>git
     </a>
 </li>
 
 <li class="tag-4">
-    <a href="../../../../.././tag/git.html">
-        <i class="icon-tag icon-large"></i>git
+    <a href="../../../../.././tag/pelican.html">
+        <i class="icon-tag icon-large"></i>pelican
     </a>
 </li>
 

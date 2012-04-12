@@ -60,7 +60,7 @@
 
 
 &lt;p&gt;I then modified my settings file to my liking, and gave it a whirl &lt;code&gt;pelican -s settings.py&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;This command spits out the static blog into the &lt;code&gt;output/&lt;/code&gt; directory. Loading it up in Chrome and at first glance. Everything looks very nice.
+&lt;p&gt;This command spits out the static blog into the &lt;code&gt;output/&lt;/code&gt; directory. Loading it up in Chrome and at first glance everything looks very nice.
 On second glance, not so much.&lt;/p&gt;
 &lt;h2&gt;Troubleshooting&lt;/h2&gt;
 &lt;p&gt;First, I noticed that in the article metadata, the links aren't working. Clicking my name should take me to the author page and it instead is linking to the relative root.&lt;/p&gt;
@@ -95,7 +95,7 @@ A quick comparison with some of the other themes shows a discrepency.&lt;/p&gt;
 
 &lt;p&gt;Not only that, now my article links are broken.
 A quick look at the Pelican 3.0 &lt;a href="http://pelican.notmyidea.org/en/latest/settings.html#url-settings"&gt;docs&lt;/a&gt; show there two new important settings called &lt;code&gt;ARTICLE_URL&lt;/code&gt; and &lt;code&gt;ARTICLE_SAVE_AS&lt;/code&gt;.
-These settings lets you save the static file as a different name than where its links point to. This is nice so your links go directly to a pretty slug, while the page gets saved as an index.html.&lt;/p&gt;
+These settings let you save the static file as a different name than where its links point to. This is nice so your links go directly to a pretty slug, while the page gets saved as an index.html.&lt;/p&gt;
 &lt;p&gt;The update for settings.py is as follows:&lt;/p&gt;
 &lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="n"&gt;ARTICLE_URL&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;/posts/{date:%Y}/{date:%m}/{slug}/&amp;#39;&lt;/span&gt;
 &lt;span class="n"&gt;ARTICLE_SAVE_AS&lt;/span&gt; &lt;span class="p"&gt;=&lt;/span&gt; &lt;span class="s"&gt;&amp;#39;/posts/{date:%Y}/{date:%m}/{slug}/index.html&amp;#39;&lt;/span&gt;

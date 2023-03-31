@@ -14,17 +14,25 @@
     .container {
       width: 80%;
       margin: auto;
-      overflow: hidden;
     }
 
     .project {
       border-bottom: 1px solid #ccc;
-      padding-bottom: 20px;
+      padding: 20px;
       margin-bottom: 20px;
+      transition: all 0.3s ease;
+      border-radius: 5px;
     }
 
     .project:last-child {
       border-bottom: none;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
+        -5px 0 15px rgba(0, 0, 0, 0.1),
+        5px 0 15px rgba(0, 0, 0, 0.1);
     }
 
     .project-date {
@@ -44,6 +52,15 @@
   <div class="container">
     <h1>AI Tests and Projects</h1>
     <h2>Interactions with GPT</h2>
+
+    <div class="project">
+      <div class="project-date">2023-03-30</div>
+      <div class="project-title">More Vectors</div>
+      <p>Added the company knowledge base as vectors to pinecone and gave Slack Bot access.</p>
+      <p>Used my access to the GPT Code Interpreter to help build a XML Document Loader including metadata with links to
+        the knowledge base sources. Turns out, LangChain has Notion document loaders for both
+        markdown exported format and API, so if/when I rebuild the vectors, I can use those.</p>
+    </div>
 
     <div class="project">
       <div class="project-date">2023-03-28/29</div>

@@ -9,15 +9,30 @@
     body {
       font-family: Arial, sans-serif;
       line-height: 1.6;
+      background-image: url('background.png');
+      /* Replace with your SVG file URL */
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
     }
 
     .container {
       width: 80%;
       margin: auto;
+      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
+    }
+
+    h1,
+    h2 {
+      color: #ffffff;
+      /* Light text color */
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      /* Text shadow for contrast */
     }
 
     .project {
-      border-bottom: 1px solid #ccc;
+      background-color: rgba(255, 255, 255, 0.6);
       padding: 20px;
       margin-bottom: 20px;
       transition: all 0.3s ease;
@@ -29,6 +44,7 @@
     }
 
     .project:hover {
+      background-color: rgba(255, 255, 255, 0.8);
       transform: translateY(-5px);
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
         -5px 0 15px rgba(0, 0, 0, 0.1),
@@ -37,7 +53,7 @@
 
     .project-date {
       font-size: 1.1em;
-      color: #666;
+      color: #333;
       margin-bottom: 5px;
     }
 
@@ -52,6 +68,19 @@
   <div class="container">
     <h1>AI Tests and Projects</h1>
     <h2>Interactions with GPT</h2>
+
+    <div class="project">
+      <div class="project-date">2023-04-03</div>
+      <div class="project-title">MidJourney</div>
+      <p>MidJourney prompting for icons, logos, and the new background image.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-date">2023-03-31</div>
+      <div class="project-title">Explicit Contextual Memory</div>
+      <p>Added functionality to the Slack Bot that when given a specific prompt, will create embeddings and store any
+        contextual knowledge in the vector store for retrieval later.</p>
+    </div>
 
     <div class="project">
       <div class="project-date">2023-03-30</div>

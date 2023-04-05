@@ -9,11 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AI Tests and Projects</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', Arial, sans-serif;
       line-height: 1.6;
       background-image: url('background.png');
-      /* Replace with your SVG file URL */
       background-attachment: fixed;
       background-repeat: no-repeat;
       background-position: center;
@@ -24,14 +25,14 @@
       width: 80%;
       margin: auto;
       text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
 
     h1,
     h2 {
       color: #ffffff;
-      /* Light text color */
       text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
-      /* Text shadow for contrast */
     }
 
     .project {
@@ -64,6 +65,21 @@
       font-size: 1.5em;
       margin-bottom: 10px;
     }
+
+    p {
+      line-height: 1.8;
+    }
+
+    /* Add hover effect for links */
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #1da1f2;
+    }
   </style>
 </head>
 
@@ -71,6 +87,15 @@
   <div class="container">
     <h1>AI Tests and Projects</h1>
     <h2>Interactions with GPT</h2>
+
+    <div class="project">
+      <div class="project-date">2023-04-04</div>
+      <div class="project-title">MidJourney Describe</div>
+      <p>Used MidJourney describe to recreate isometric vector graphics and more.</p>
+      <p>I also used the GPT code interpreter to remove the border from the planet in the favicon and to my amusement,
+        it worked. I thought it wasn't working but it turns out the image previewer within VS Code wasn't displaying the
+        image correctly.</p>
+    </div>
 
     <div class="project">
       <div class="project-date">2023-04-03</div>

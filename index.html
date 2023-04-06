@@ -89,6 +89,23 @@
     <h2>Interactions with GPT</h2>
 
     <div class="project">
+      <div class="project-date">2023-04-05</div>
+      <div class="project-title">Cloudflare Pages & Workers</div>
+      <p>GPT and I decided on building an app for receipt splitting for group orders. Scan the receipt, get a unique URL
+        to email or SMS the group. Itemized receipt allows selecting which items are yours, and create a quick link to
+        Venmo your amount to the person who paid the bill.</p>
+      <p>After a bit of discussion, GPT and I went with Cloudflare Pages & Workers, and I was a bit biased because I
+        wanted to try it.</p>
+      <p>GPT created the home page which is a form to add your scanned receipt, the amount you tipped, and your Venmo
+        address.</p>
+      <p>The Cloudflare worker uses Google Vision API for OCR, and GPT created, almost entirely itself, parser logic to
+        take the resuling OCR blocks and parse them into line items. Perhaps GPT4's image model will be able to do this
+        more efficiently out of the box, but the fact that GPT4 could code up a solution in a matter of seconds that
+        only needed minor tweaks (thresholds items being on the same line) has my jaw on the floor.</p>
+      <p>Amazing progress in a very short amount of time, but not finished yet.</p>
+    </div>
+
+    <div class="project">
       <div class="project-date">2023-04-04</div>
       <div class="project-title">MidJourney Describe</div>
       <p>Used MidJourney describe to recreate isometric vector graphics and more.</p>

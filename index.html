@@ -32,15 +32,17 @@
     h1,
     h2 {
       color: #ffffff;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
     }
 
     .project {
-      background-color: rgba(255, 255, 255, 0.6);
+      color: white;
+      text-shadow: 1px 1px 8px rgba(0, 0, 0, 3);
       padding: 20px;
       margin-bottom: 20px;
       transition: all 0.3s ease;
-      border-radius: 5px;
+      border-radius: 8px;
+      border-bottom: 1px solid white;
     }
 
     .project:last-child {
@@ -48,16 +50,16 @@
     }
 
     .project:hover {
-      background-color: rgba(255, 255, 255, 0.8);
-      transform: translateY(-5px);
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1),
-        -5px 0 15px rgba(0, 0, 0, 0.1),
-        5px 0 15px rgba(0, 0, 0, 0.1);
+      /* background-color: rgba(255, 255, 255, 0.8); */
+      /* transform: translateY(-5px); */
+      /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1), */
+      /* -5px 0 15px rgba(0, 0, 0, 0.1), */
+      /* 5px 0 15px rgba(0, 0, 0, 0.1); */
     }
 
     .project-date {
       font-size: 1.1em;
-      color: #333;
+      color: white;
       margin-bottom: 5px;
     }
 
@@ -68,6 +70,7 @@
 
     p {
       line-height: 1.8;
+      letter-spacing: 1.3px;
     }
 
     /* Add hover effect for links */
@@ -87,6 +90,29 @@
   <div class="container">
     <h1>AI Tests and Projects</h1>
     <h2>Interactions with GPT</h2>
+
+    <div class="project">
+      <div class="project-date">2023-04-08</div>
+      <div class="project-title">Calculating Shareables</div>
+      <p>Added shareable items to the receipt project. From tax to appetizers, some times there are receipt line items
+        that should be split amongst the party.</p>
+      <p>GPT helped talk through the math (pretty simple) then wrote the code to do it.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-date">2023-04-07</div>
+      <div class="project-title">Finishing Receipts</div>
+      <p>Just about finished up with the receipts project. Will be able to dogfood it early next month.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-date">2023-04-06</div>
+      <div class="project-title">GPT Amusing Delusions</div>
+      <p>Spent a while today battling GPT's hallucinations. Since my app project has a few pages (I'm not interested in
+        building it as an SPA) I used GPT to help walk me through putting a templating/layout engine in place.</p>
+      <p>Since I already know better than to follow it too deep into a rabbit hole, I had to point out what it was
+        suggesting was specifically called out in the library's documentation as unsupported.</p>
+    </div>
 
     <div class="project">
       <div class="project-date">2023-04-05</div>

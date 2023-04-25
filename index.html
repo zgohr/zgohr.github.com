@@ -19,30 +19,28 @@
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      color: #333;
     }
 
     .container {
+      background: rgba(255, 255, 255, 0.8);
       width: 80%;
-      margin: auto;
-      text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.1);
-      padding-top: 30px;
-      padding-bottom: 30px;
+      max-width: 1200px;
+      margin: 50px auto;
+      padding: 30px;
+      border-radius: 10px;
     }
 
     h1,
     h2 {
-      color: #ffffff;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 1);
+      margin-bottom: 20px;
     }
 
     .project {
-      color: white;
-      text-shadow: 1px 1px 8px rgba(0, 0, 0, 3);
-      padding: 20px;
-      margin-bottom: 20px;
+      padding: 30px;
+      margin-bottom: 30px;
       transition: all 0.3s ease;
-      border-radius: 8px;
-      border-bottom: 1px solid white;
+      border-bottom: 1px solid #ddd;
     }
 
     .project:last-child {
@@ -51,21 +49,20 @@
 
     .project-date {
       font-size: 1.1em;
-      color: white;
-      margin-bottom: 5px;
+      margin-bottom: 10px;
     }
 
     .project-title {
       font-size: 1.5em;
-      margin-bottom: 10px;
+      margin-bottom: 15px;
     }
 
     p {
+      font-size: 1.1em;
       line-height: 1.8;
       letter-spacing: 1.3px;
     }
 
-    /* Add hover effect for links */
     a {
       color: inherit;
       text-decoration: none;
@@ -81,25 +78,45 @@
 <body>
   <div class="container">
     <h1>AI Tests and Projects</h1>
-    <h2>Interactions with GPT</h2>
+    <h2>Interactions with GPT & LLMs</h2>
+
+    <div class="project">
+      <div class="project-date">2023-04-25</div>
+      <div class="project-title">Plugins</div>
+      <p>I was granted access to ChatGPT plugins. Since the Browser plugin isn't included, I'm realizing I may need to
+        explore creating a plugin myself.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-date">2023-04-24</div>
+      <div class="project-title">GPT4All</div>
+      <p>Upgraded to gpt4all-j-v1.3-groovy - it's an improvement, but not yet usable for any applications I can think
+        of.</p>
+    </div>
+
+    <div class="project">
+      <div class="project-date">2023-04-20</div>
+      <div class="project-title">Personal Use Models</div>
+      <p>Trying out gpt4all-j-v1.2-jazzy locally.</p>
+    </div>
 
     <div class="project">
       <div class="project-date">2023-04-16</div>
       <div class="project-title">GPT-4 Limits</div>
       <p>Working on a prototype project with GPT-4, continually running into usage limits. Falling back to GPT-3 which
-        is somewhat capable with a different prompting mindset.</p>
+        is somewhat capable with a different prompting approach.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-13</div>
       <div class="project-title">AutoGPT & Inspiration</div>
       <p>Introduced a friend to MidJourney.</p>
-      <p>Tweaks to the Receipt app, looking for a new name.</p>
+      <p>Made tweaks to the Receipt app and am looking for a new name.</p>
       <p>With so much movement on AutoGPT, I took a look through the code changes and retried some of the tasks I had
-        written. The first was to research a consumer product, and this one had no luck at all. AutoGPT is now able to
-        correct itself when it something in the scripting causes errors, but it never completed its research and gave
-        results prior to getting stuck in a loop.</p>
-      <p>But I had what I thought a more difficult task of determing cloud infrastructure and creating configuration
+        written. The first task was to research a consumer product, and this one had no luck at all. AutoGPT can now
+        correct itself when something in the scripting causes errors, but it never completed its research and provided
+        results before getting stuck in a loop.</p>
+      <p>But I had what I thought a more difficult task of determining cloud infrastructure and creating configuration
         based on loose requirements. I spent $0.26 and I wonder if I could have gotten farther by spending a bit more.
         AutoGPT does not feel efficient, but it does feel like it can make progress given enough time and resources.
         This has me more optimistic than the last time I tried, all of 4 days ago.
@@ -109,171 +126,173 @@
     <div class="project">
       <div class="project-date">2023-04-10</div>
       <div class="project-title">Research</div>
-      <p>Continuing on the AGI rabbit hole. These projects show potential, like BabyAGI and AutoGPT. Imagining the
-        use-cases is a trip. But reality doesn't line up with hype yet. Will continue to watch the space.</p>
+      <p>Continuing down the AGI rabbit hole. Projects like BabyAGI and AutoGPT show potential. Imagining the
+        use-cases is fascinating, but reality hasn't caught up with the hype yet. I will continue to watch the space.
+      </p>
       <p>Finished converting the receipt tool from Cloudflare Worker to Cloudflare Pages Functions.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-09</div>
       <div class="project-title">AGI - AutoGPT</div>
-      <p>Tried out the AutoGPT project, an experimental set of scripts that when given a task create a set of steps to
-        complete to reach a goal.</p>
-      <p>Very interesting concept, but it tends to run itself in circles even with the GPT-4 API. A lot of potential,
-        though.</p>
+      <p>I tried out the AutoGPT project, an experimental set of scripts that create a series of steps to complete a
+        given task and reach a goal. It's a very interesting concept, but it tends to run in circles even with the GPT-4
+        API. However, there's a lot of potential here.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-07</div>
       <div class="project-title">Finishing Receipts</div>
-      <p>Just about finished up with the receipts project. Will be able to dogfood it early next month.</p>
+      <p>I'm just about finished with the receipts project and should be able to test it internally early next month.
+      </p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-06</div>
       <div class="project-title">GPT Amusing Delusions</div>
-      <p>Spent a while today battling GPT's hallucinations. Since my app project has a few pages (I'm not interested in
-        building it as an SPA) I used GPT to help walk me through putting a templating/layout engine in place.</p>
-      <p>Since I already know better than to follow it too deep into a rabbit hole, I had to point out what it was
-        suggesting was specifically called out in the library's documentation as unsupported.</p>
+      <p>I spent some time today dealing with GPT's hallucinations. Since my app project has a few pages (I'm not
+        interested in building it as a Single Page Application), I used GPT to help me implement a templating/layout
+        engine.</p>
+      <p>Since I already know better than to follow GPT too deep into a rabbit hole, I had to point out that its
+        suggestion was specifically mentioned as unsupported in the library's documentation.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-05</div>
       <div class="project-title">Cloudflare Pages & Workers</div>
-      <p>GPT and I decided on building an app for receipt splitting for group orders. Scan the receipt, get a unique URL
-        to email or SMS the group. Itemized receipt allows selecting which items are yours, and create a quick link to
-        Venmo your amount to the person who paid the bill.</p>
-      <p>After a bit of discussion, GPT and I went with Cloudflare Pages & Workers, and I was a bit biased because I
-        wanted to try it.</p>
-      <p>GPT created the home page which is a form to add your scanned receipt, the amount you tipped, and your Venmo
+      <p>GPT and I decided to build an app for receipt splitting for group orders. The idea is to scan the receipt,
+        generate a unique URL to email or SMS the group, and then allow each person to select their items from an
+        itemized receipt. The app will also create a quick link to Venmo the owed amount to the person who paid the
+        bill.</p>
+      <p>After some discussion, GPT and I chose to use Cloudflare Pages & Workers, partly because I wanted to try it.
+        GPT created the home page, which is a form to add a scanned receipt, the tip amount, and the user's Venmo
         address.</p>
-      <p>The Cloudflare worker uses Google Vision API for OCR, and GPT created, almost entirely itself, parser logic to
-        take the resuling OCR blocks and parse them into line items. Perhaps GPT4's image model will be able to do this
-        more efficiently out of the box, but the fact that GPT4 could code up a solution in a matter of seconds that
-        only needed minor tweaks (thresholds items being on the same line) has my jaw on the floor.</p>
-      <p>Amazing progress in a very short amount of time, but not finished yet.</p>
+      <p>The Cloudflare worker uses the Google Vision API for Optical Character Recognition (OCR), and GPT created
+        parser logic to process the resulting OCR blocks into line items. Although GPT-4's image model might be able to
+        do this more efficiently out of the box, I was astounded by how GPT-4 coded up a solution in seconds that only
+        needed minor tweaks, like adjusting thresholds for items being on the same line.</p>
+      <p>We made amazing progress in a short amount of time, but the project is not finished yet.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-04</div>
       <div class="project-title">MidJourney Describe</div>
-      <p>Used MidJourney describe to recreate isometric vector graphics and more.</p>
-      <p>I also used the GPT code interpreter to remove the border from the planet in the favicon and to my amusement,
-        it worked. I thought it wasn't working but it turns out the image previewer within VS Code wasn't displaying the
+      <p>I used MidJourney Describe to recreate isometric vector graphics and more. Additionally, I used the GPT code
+        interpreter to remove the border from the planet in the favicon. To my amusement, it worked! I initially thought
+        it wasn't functioning properly, but it turned out that the image previewer within VS Code wasn't displaying the
         image correctly.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-04-03</div>
       <div class="project-title">MidJourney</div>
-      <p>MidJourney prompting for icons, logos, and the new background image.</p>
-      <p>Using the moon from the generated art, I used MidJourney's /describe to generate some other,
-        similar style moons. I took one and gave it to GPT's code interpreter to have it turned into a favicon.</p>
+      <p>I used MidJourney for prompting icons, logos, and a new background image. Utilizing the moon from the generated
+        art, I employed MidJourney's /describe feature to create some other moons in a similar style. I selected one and
+        provided it to GPT's code interpreter to convert it into a favicon.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-31</div>
       <div class="project-title">Explicit Contextual Memory</div>
-      <p>Added functionality to the Slack Bot that when given a specific prompt, will create embeddings and store any
-        contextual knowledge in the vector store for retrieval later.</p>
+      <p>I added functionality to the Slack Bot that, when given a specific prompt, creates embeddings and stores any
+        contextual knowledge in the vector store for later retrieval.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-30</div>
       <div class="project-title">More Vectors</div>
-      <p>Added the company knowledge base as vectors to pinecone and gave Slack Bot access.</p>
-      <p>Used my access to the GPT Code Interpreter to help build a XML Document Loader including metadata with links to
-        the knowledge base sources. Turns out, LangChain has Notion document loaders for both
-        markdown exported format and API, so if/when I rebuild the vectors, I can use those.</p>
+      <p>I added the company knowledge base as vectors to Pinecone and gave the Slack Bot access. I used my access to
+        the GPT Code Interpreter to help build an XML Document Loader that includes metadata with links to the knowledge
+        base sources. As it turns out, LangChain offers Notion document loaders for both markdown exported format and
+        API, so I can use those if or when I rebuild the vectors.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-28/29</div>
       <div class="project-title">Slack Bot, Enhance</div>
-      <p>Added the ability for the Slack Bot to answer questions relating to the company Notion. This uses Pinecone as a
-        vector database, and LangChain AI libraries for loading data into vectors, querying vectors, and prompting GPT3.
-      </p>
+      <p>I added the ability for the Slack Bot to answer questions related to the company's Notion. This feature uses
+        Pinecone as a vector database, and LangChain AI libraries for loading data into vectors, querying vectors, and
+        prompting GPT-3.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-27</div>
       <div class="project-title">GPT Code Interpreter</div>
-      <p>Got invited to use the GPT code interpreter plugin. I see great value in this plugin for work related
-        quick-scripting, but nothing off the top of my head.</p>
+      <p>I received an invitation to use the GPT code interpreter plugin. While I see great value in this plugin for
+        work-related quick scripting, I don't have any immediate ideas for its application.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-27</div>
       <div class="project-title">Database Migration Assistance</div>
-      <p>Prompting experiments while performing a database migration between development environments in Google Cloud.
-      </p>
+      <p>I experimented with prompting while performing a database migration between development environments in Google
+        Cloud.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-26</div>
       <div class="project-title">Prompting for MidJourney</div>
-      <p>With almost any project I use GPT to improve my prompting based upon what I'd like the response to be. This was
-        a test in generating prompting for MidJourney - giving GPT a description of size, shape, placement, etc, had it
-        create a prompt for MidJourney to generate a tattoo design.</p>
+      <p>In almost any project, I use GPT to improve my prompting based on what I'd like the response to be. This test
+        involved generating prompts for MidJourney, giving GPT a description of size, shape, placement, etc., and having
+        it create a prompt for MidJourney to generate a tattoo design.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-23</div>
       <div class="project-title">Slack Bot</div>
-      <p>Created a Slack bot using Google Cloud Functions to convert chat messages into BigQuery queries using the GPT
-        API, and execute them against a BigQuery data warehouse, returning results.</p>
+      <p>I created a Slack bot using Google Cloud Functions to convert chat messages into BigQuery queries using the GPT
+        API, executing them against a BigQuery data warehouse and returning results.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-22</div>
       <div class="project-title">Background Tasks</div>
-      <p>Implemented a new background task system pairing with GPT for task automation in Elixir.</p>
+      <p>I implemented a new background task system, pairing with GPT for task automation in Elixir.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-20</div>
       <div class="project-title">Refactoring and Test Generation</div>
-      <p>Continuing to test GPT capabilities in helping add test coverage (give function, ask for test) and with passing
-        tests, asking GPT to refactor for readability.</p>
+      <p>I continued to test GPT's capabilities in helping add test coverage (giving a function, asking for a test) and,
+        with passing tests, asking GPT to refactor for readability.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-19</div>
       <div class="project-title">Marketing Content</div>
-      <p>Experiments giving GPT large swaths of information and having it generate different types of marketing
+      <p>I experimented with giving GPT large amounts of information and having it generate different types of marketing
         material.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-19</div>
       <div class="project-title">Magic Wand</div>
-      <p>Built a feature into Alinea that takes text generated by therapists and corrects for capitalization, grammar,
-        and style using GPT-3 API.</p>
+      <p>I built a feature into Alinea that takes text generated by therapists and corrects capitalization, grammar, and
+        style using the GPT-3 API.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-19</div>
       <div class="project-title">Creature Generator</div>
-      <p>Pairing with ChatGPT, built an SVG creature generator in javascript. Creatures have random attributes, and
-        based upon the attributes, we use d3.js to draw the SVG on the page. This was an experiment to test GPT's math
-        and drawing capability.</p>
+      <p>Working with ChatGPT, I built an SVG creature generator in JavaScript. Creatures have random attributes, and
+        based on the attributes, we use d3.js to draw the SVG on the page. This experiment tested GPT's math and drawing
+        capabilities.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-18</div>
       <div class="project-title">Voice AI Cross-Platform</div>
-      <p>Converted Voice AI to cross platform using Flutter. The Whisper API was just an experiment, this time went with
-        on-device voice transcription. Compiled for Android, iOS, and macOS.</p>
+      <p>I converted Voice AI to a cross-platform app using Flutter. The Whisper API was just an experiment, so this
+        time I went with on-device voice transcription. I compiled the app for Android, iOS, and macOS.</p>
     </div>
 
     <div class="project">
       <div class="project-date">2023-03-17</div>
       <div class="project-title">Voice AI</div>
-      <p>Using Android Studio, built an Android widget to record audio, send to the Open AI Whisper API for
-        transcription, and send to the GPT-3 API for summary. The widget then kicked off the share/email flow to send
-        the summary in an email, save to notes, etc.</p>
-      <p>Rebuilt without the widget due to limitations widgets have when recording audio.</p>
+      <p>Using Android Studio, I built an Android widget to record audio, send it to the OpenAI Whisper API for
+        transcription, and then send it to the GPT-3 API for summarization. The widget initiated the share/email flow to
+        send the summary in an email, save it to notes, etc.</p>
+      <p>Due to limitations widgets have when recording audio, I rebuilt the app without the widget.</p>
     </div>
 
   </div>
